@@ -11,7 +11,7 @@ const { celebrate, Joi, errors } = require('celebrate'); // validation
 const app = express(); // create app 
 
 app.use(cors({
-  origin: ['http://192.168.103.52:5173', 'http://localhost:5173'], // allow to connect to this server just from this 3 urls
+  origin: ['http://192.168.103.52:5173', 'http://localhost:5173', 'http://130.193.58.197'], // allow to connect to this server just from this 3 urls
 }));
 
 const { PORT = 3001 } = process.env; // create default port for server
